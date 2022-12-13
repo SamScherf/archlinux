@@ -30,3 +30,13 @@ SUCKLESSFOLDER="Projects/suckless"
 
 # Dynamic Menu
 [ -d  $SUCKLESSFOLDER/dmenu ] || (git clone https://git.suckless.org/dmenu $SUCKLESSFOLDER/dmenu)
+
+# Compile and install suckless programs
+# -------------------------------------
+
+echo "Enter your root password."
+su root -c "make install -C $SUCKLESSFOLDER/st; \
+	    make install -C $SUCKLESSFOLDER/dwm; \
+	    make install -C $SUCKLESSFOLDER/slstatus; \
+	    make install -C $SUCKLESSFOLDER/slock; \
+	    make install -C $SUCKLESSFOLDER/dmenu;"
