@@ -19,3 +19,4 @@ chmod +x /archlinux/install.sh
 
 - Create folders I often use
 - Download, compile, and install suckless programs
+- Install paru

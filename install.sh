@@ -40,3 +40,9 @@ su root -c "make install -C $SUCKLESSFOLDER/st; \
 	    make install -C $SUCKLESSFOLDER/slstatus; \
 	    make install -C $SUCKLESSFOLDER/slock; \
 	    make install -C $SUCKLESSFOLDER/dmenu;"
+
+# Install paru
+# ----------------------
+
+[ -d  Projects/paru ] || (git clone https://aur.archlinux.org/paru-bin Projects/paru)
+(cd Projects/paru/ && makepkg -sirc)
