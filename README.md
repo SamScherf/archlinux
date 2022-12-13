@@ -18,3 +18,4 @@ chmod +x /archlinux/install.sh
 ## What it does
 
 - Create folders I often use
+- Download my forks of suckless programs
