@@ -4,8 +4,6 @@
 FOLDERS="Projects Documents"
 for FOLDER in $(echo $FOLDERS)
 do
-	# If directory exists
-	[ -d "$FOLDER" ] \
-	&& (echo "$FOLDER folder already exists") \
-	|| (mkdir $FOLDER; echo "Created $FOLDER folder")
+	# If directory doesn't exists, create folder
+	[ -d "$FOLDER" ] || (mkdir $FOLDER)
 done
