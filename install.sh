@@ -24,3 +24,9 @@ SUCKLESSFOLDER="Projects/suckless"
 
 # Status Bar
 [ -d  $SUCKLESSFOLDER/slstatus ] || (git clone https://github.com/SamScherf/slstatus $SUCKLESSFOLDER/slstatus)
+
+# Lock screen
+[ -d  $SUCKLESSFOLDER/slock ] || (git clone https://git.suckless.org/slock $SUCKLESSFOLDER/slock)
+
+# Dynamic Menu
+[ -d  $SUCKLESSFOLDER/dmenu ] || (git clone https://git.suckless.org/dmenu $SUCKLESSFOLDER/dmenu)
