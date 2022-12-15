@@ -15,6 +15,12 @@ chmod +x /archlinux/install.sh
 ./archlinux/install.sh
 ```
 
+After running the script, we need to configure the system to follow the XDG Base Directory standard. To do this, add the following to the bottom of '/etc/bash.bashrc':
+
+```
+source "$HOME/.config/bash/bashrc"
+```
+
 ## What it does
 
 - Create folders I often use
