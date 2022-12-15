@@ -2,6 +2,10 @@
 
 This is my install script for Arch Linux
 
+## Dependencies
+
+- python-jedi
+
 ## Instructions
 
 ```
