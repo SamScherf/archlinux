@@ -21,6 +21,13 @@ After running the script, we need to configure the system to follow the XDG Base
 source "$HOME/.config/bash/bashrc"
 ```
 
+Next, open a new terminal and run the following command:
+
+
+```
+mkdir -p "$XDG_STATE_HOME"/bash 
+```
+
 ## What it does
 
 - Create folders I often use
